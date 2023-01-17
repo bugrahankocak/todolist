@@ -1,0 +1,184 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+
+ background-image: url(https://i.etsystatic.com/33636509/r/il/803c50/3613879679/il_fullxfull.3613879679_k09m.jpg);
+ background-size: cover;
+ background-repeat: no-repeat;
+  font-family: sans-serif;
+ 
+}
+
+header h1{
+  color: rgb(5, 4, 4);
+  margin: 5rem 0;
+  font-size: 3rem;
+}
+
+header,
+form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+form{
+  position: relative;
+}
+
+form .search{
+  display: flex;
+}
+
+form button,
+form input{
+  padding: 0.5rem;
+  font-size: 2rem;
+  border: none;
+  border-radius: 15%;
+  background-color: #fff;
+  outline: none;
+}
+
+form button{
+  color: #fff;
+  background-color: #340436;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border-radius: 50%;
+}
+
+form button:hover{
+  background-color: #fff;
+  color: red
+}
+
+.select{
+  position: relative;
+  margin: 1rem;
+  overflow: hidden;
+}
+
+select{
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: none;
+  border: none;
+
+  width: 25rem;
+  padding: 1rem;
+  cursor: pointer;
+  color: #d60ddd;
+  padding-left: 5px;
+}
+
+.select:after{
+  content: "\25BC";
+  position: absolute;
+  background-color: #e04a0f;
+  color: rgb(219, 255, 17);
+  top: 0;
+  right: 0;
+  padding: 1rem;
+  cursor: pointer;
+  transition: all 1s ease;
+  pointer-events: none;
+}
+
+.select:hover:after{
+  background-color: rgb(19, 10, 10);
+  color: #ffffff;
+}
+
+.todo-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.todo-list{
+  min-width: 30%;
+  list-style: none;
+}
+
+.todo{
+  margin: 0.5rem;
+  background-color: rgb(214, 231, 240);
+  color: rgb(161, 9, 73);
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: .5s all ease;
+  border-radius: 15%;
+}
+
+.todo li{
+  width: 100%;
+  padding: 0 0.5rem;
+  
+}
+
+.complete-btn,
+.trash-btn{
+  background-color: hsl(9, 48%, 69%);
+  color: #fff;
+  border: none;
+  padding: 1rem;
+  cursor: pointer;
+  font-size: 1rem;
+  border-radius: 15%;
+}
+
+.complete-btn{
+  background-color: #2f0b93;
+}
+
+
+.fa-check-circle,
+.fa-minus-circle{
+  font-size: 1.5rem;
+  pointer-events: none;
+}
+
+/*! alert css kismi */
+.alert-wrapper{
+  position: absolute;
+  bottom: 10%;
+  right: 0;
+}
+
+.alert-success,
+.alert-warning{
+  padding: 1rem;
+  color: rgb(183, 228, 214);
+  font-weight: bold;
+  width: 25rem;
+  text-align: center;
+
+}
+
+.alert-warning{
+  background-color: #4e0414;
+
+}
+
+.alert-success{
+  background-color: #495c49;
+}
+
+
+.fall{
+  transform: translateY(8rem) rotateZ(360deg);
+  opacity: 0;
+}
+
+.completed{
+  opacity: 0.8;
+  text-decoration: line-through;
+}
